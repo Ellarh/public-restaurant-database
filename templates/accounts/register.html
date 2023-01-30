@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% include '_alerts.html' %}
+{% block content %}
+
+<section class="register-section">
+    <h3 class="form-title"><strong>REGISTER</strong></h3>
+    <hr>
+    <form method="POST" action="{% url 'accounts:register' %}">
+            {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="first_name">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="last_name">
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="email">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <button type="submit" class="btn btn-success">Register</button>
+    </form>
+</section>
+
+{% endblock %}

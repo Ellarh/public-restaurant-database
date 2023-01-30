@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="restaurant_list_body">
+    <h1 class="title"><strong>Welcome to {{ restaurant_detail.name }} detail page</strong></h1>
+    <hr>
+    <p class="detail_paragraph">Name: {{ restaurant_detail.name }}</p>
+    <p class="detail_paragraph">Address: {{ restaurant_detail.address }}</p>
+    <p class="detail_paragraph">City: {{ restaurant_detail.city }}</p>
+    <p class="detail_paragraph">State: {{ restaurant_detail.state }}</p>
+    <p class="detail_paragraph">Website: <a href="{{ restaurant_detail.website }}">{{ restaurant_detail.name }}</a></p>
+    <p class="detail_paragraph">Phone Number: {{ restaurant_detail.phone_number }}</p>
+    <p class="detail_paragraph">Date Added: {{ restaurant_detail.date_added }}</p>
+    {% if user.is_authenticated %}
+    <div class="new_restaurant">
+        <a href="{% url 'all:update' pk=restaurant_detail.pk %}"> <input type="submit" value="Update" class="btn btn-success"></a>
+    </div>
+    {% else %}
+
+    {% endif %}
+</section>
+
+
+
+{% endblock %}

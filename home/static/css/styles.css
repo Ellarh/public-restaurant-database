@@ -1,0 +1,93 @@
+body{
+    background-color: #F8EDE3;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover{
+    color: #85586F;
+}
+
+hr{
+    border: dotted #85586F 6px;
+    border-bottom: None;
+    width: 10%;
+    margin: 10px auto;
+}
+
+form{
+    padding: 40px 0;
+}
+
+/* Navigation Bar */
+
+#navigation-bar{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #F8EDE3;
+    padding: 1% 5%;
+}
+
+.nav-item{
+    padding: 0 20px;
+}
+
+.logo{
+    width: 60px;
+    padding-right: 10px;
+}
+
+/* Homepage Section */
+#homepage-section{
+    padding: 5% 5%;
+    text-align: center;
+    background-color: #F8EDE3;
+}
+
+.title{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.content-body{
+    font-family: 'Noto Sans', sans-serif
+
+}
+
+.home-button{
+    background-color: #85586F;
+    color: #F8EDE3;
+}
+
+.home-button-div{
+    padding: 3% 0;
+}
+
+/* Restaurant List Body */
+.restaurant_list_body{
+    background-color: #F8EDE3;
+    text-align: center;
+    padding: 5% 5%;
+}
+
+.table-content{
+    padding: 2% 0;
+}
+
+/* Register Section */
+.register-section{
+    padding: 3% 20%;
+    text-align: left;
+}
+
+.form-title{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-weight: 700px;
+    padding: 10px 0;
+}
+
+textarea{
+    height: 70%;
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% include '_alerts.html' %}
+{% block content %}
+<section class="register-section">
+    <h3 class="form-title"><strong>LOGIN</strong></h3>
+    <hr>
+    <form method="POST" action="{% url 'accounts:login' %}">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+</section>
+
+{% endblock %}

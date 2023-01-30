@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include '_alerts.html' %}
+    <section id="homepage-section">
+        <h1 class="title"><strong>Find Restaurants Near You!!</strong></h1>
+            <p class="content-body">
+                A Database of Restaurants in Nigeria.
+                Add restaurants you love, leave a comment, and more!
+            </p>
+        <div class="home-button-div">
+            <a href="{% url 'all:list' %}"><input type="submit" class="btn btn-lg home-button" value="All Restaurants"></a>
+        </div>
+    </section>
+
+{% endblock %}
