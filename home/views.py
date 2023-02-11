@@ -18,6 +18,7 @@ class RestaurantList(ListView):
     context_object_name = 'restaurant_list'
     model = Restaurant
     template_name = 'home/restaurant_list.html'
+    paginate_by = 5
 
     def get_queryset(self):
         return Restaurant.objects.filter(is_published=True).order_by('-id')

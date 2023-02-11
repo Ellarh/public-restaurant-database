@@ -21,9 +21,6 @@ def populate(N=5):
         fake_city = fakegen.city()
         fake_state = fakegen.state()
         fake_url = fakegen.url()
-        # fake_phone_number = str(fakegen.phone_number())
-        # fake_date = fakegen.date()
-        # fake_image = fakegen.image()
 
         # Create new Entry
         user = Restaurant.objects.get_or_create(
